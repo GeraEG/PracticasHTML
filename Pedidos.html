@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Haz tu pedido aquí</h1>
+
+    <form action="pedido.js">
+        <p>Puedes combinar tus pasteles favoritos (Solo se pueden seleccionar máximo dos tipos de sabores)</p>
+        <select name="combinacion1" id="combinacion1">
+            <option value="Mercurio">Mercurio</option>
+            <option value="Venus">Venus</option>
+            <option value="Marte">Marte</option>
+            <option value="Júpiter">Júpiter</option>
+            <option value="Saturno">Saturno</option>
+            <option value="Urano">Urano</option>
+            <option value="Neptuno">Neptuno</option>
+        </select>
+        <select name="combinacion2" id="combinacion2">
+            <option value="Mercurio">Mercurio</option>
+            <option value="Venus">Venus</option>
+            <option value="Marte">Marte</option>
+            <option value="Júpiter">Júpiter</option>
+            <option value="Saturno">Saturno</option>
+            <option value="Urano">Urano</option>
+            <option value="Neptuno">Neptuno</option>
+        </select><br><br><br>
+
+        <p>Puedes combinar tus adornos favoritos (Solo se pueden seleccionar máximo dos tipos de adornos)</p>
+        <select name="combinacion1" id="combinacion1">
+            <option value="Imágenes">Imágenes</option>
+            <option value="Adornos frutales">Adornos frutales</option>
+            <option value="Letreros o mensajes">Letreros o mensajes</option>
+            <option value="Adornos florales">Adornos florales</option>
+        </select>
+        <select name="combinacion2" id="combinacion2">
+            <option value="Imágenes">Imágenes</option>
+            <option value="Adornos frutales">Adornos frutales</option>
+            <option value="Letreros o mensajes">Letreros o mensajes</option>
+            <option value="Adornos florales">Adornos florales</option>
+        </select><br><br><br>
+
+        <textarea cols="50" rows="5" placeholder="Describe como quieres tu pastel."></textarea>
+        <br><br>
+
+        <p>Realizado tu pedido introduce los siguientes datos</p><br>
+
+        <label for="Nombre">¿Nombre completo?</label><br>
+        <input type="text" id="Nombre" name="Nombre" placeholder="Nombre"><br><br>
+
+        <label for="Teléfono">¿Teléfono casa?</label><br>
+        <input type="tel" id="Teléfono" name="Teléfono" placeholder="Teléfono" maxlength="10"><br><br>
+
+        <label for="Celular">¿Celular?</label><br>
+        <input type="tel" id="Celular" name="Celular" placeholder="Celular" maxlength="10"><br><br>
+
+        <label for="Correo">¿Correo electrónico?</label><br>
+        <input type="email" id="Correo" name="Correo" placeholder="Correo"><br><br>
+
+        <button onclick="guardarDatos()">Guardar datos</button><br><br>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Tel Casa</th>
+                    <th>Celular</th>
+                    <th>Correo</th>
+                </tr>
+            </thead>
+            <tbody id="valores"></tbody>
+        </table>
+
+    </form>
+    
+</body>
+</html>
